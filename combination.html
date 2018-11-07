@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event</title>
+   
+
+    </head>
+
+    
+    <body bgcolor="#44">
+        <font face="Comic Sans MS"; size=5; color="darkgreen">
+        <center>
+         
+        <p>FIND THE RIGHT COMBINATION</p>
+        </font>
+        <font face="Fixedsys"; size=3 color="darkred">
+        <p>find the right combination by pressing the button</p>
+        <p>for ur help there  is a text in each button which will lead to a sentence</p>
+        </font>
+        <script type="text/javascript">
+        //function setup
+            let x;
+            function text1(){
+                
+                x='i';
+            }
+            function text2(){
+                
+                x=x+" "+"destroyed";
+            }
+            function text3(){
+                
+                x=x+" "+"my";
+            }
+            function text4(){
+                
+                x=x+" "+"car";
+            }
+            function text5(){
+                
+                x=x+" "+"10";
+            }
+            function text6(){
+                
+                x=x+" "+"times";
+            }
+            function test(){
+                document.getElementById("answer")
+                .innerHTML=x;
+                if (x=="i destroyed my car 10 times") {
+                    document.getElementById("tester")
+                    .innerHTML="congratulation you won an IPHONE XS MAX";    
+                }
+                else{
+                    document.getElementById("tester")
+                    .innerHTML="WRONG! PLS TRY AGAIN";
+                }
+            }
+        //i destroyed my car 10 times    
+        </script>
+        
+        
+        <p><button onclick="text5()">click ME!!!</button></p>
+        <p><button onclick="text2()">click ME!!!</button></p>
+        <p><button onclick="text6()">click ME!!!</button></p>
+        <p><button onclick="text3()">click ME!!!</button></p>
+        <p><button onclick="text1()">click ME!!!</button></p>
+        <p><button onclick="text4()">click ME!!!</button></p>
+        <p><button onclick="test()">SUBMIT</button></p>
+        </font>
+        <font face="Comic Sans MS"; size=5 color="skyblue">
+        <p id="answer"></p>
+        </font>
+        <font face="Impact";size=5 color="grey">
+        <p id="tester"></p>
+        
+        </center>
+        </font>
+    </body>
+
+</html>
